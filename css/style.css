@@ -1,0 +1,226 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #222;
+    height: 100% !important
+}
+
+header, footer {
+    display: grid;
+    background: #AA0505
+}
+
+a, a:visited {
+    color: #AA0505;
+    font-size: 16px
+}
+
+a i.far {
+    margin-right: 0.5em
+}
+
+h1 {
+    text-align: center
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
+    width: 100%
+}
+
+input.err {
+    border-color: #AA0505
+}
+
+.main {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(10%, 100px) 1fr minmax(10%, 100px)
+}
+
+.inf {
+    color: #fff;
+    align-self: center;
+    justify-self: center;
+    padding: 1em 0
+}
+
+.inf.title {
+    font-size: 2em
+}
+
+.content {
+    margin: 2em 1em
+}
+
+.btn, .btn:visited {
+    font-size: 1em;
+    padding: 1em 2em;
+    background: #fcd000;
+    text-transform: uppercase
+}
+
+.btn:hover {
+    background: #222;
+    color: #fff
+}
+
+.gline {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 20% 80%;
+    margin: 1em 0
+}
+
+.gline.actions {
+    grid-template-columns: 50% 50%
+}
+
+.gline.actions div {
+    align-self: center
+}
+
+.gline.actions a, .gline.actions a:visited, .fancybox-content a, .fancybox-content a:visited {
+    text-decoration: none;
+    color: #666
+}
+
+.gline.actions a:hover, .fancybox-content a:hover {
+    color: #222
+}
+
+.office-form {
+    width: 600px;
+    margin: 0 auto
+}
+
+.tablesorter {
+    margin: 1em auto;
+    border-right: solid 1px #eee;
+    border-left: solid 1px #eee
+}
+
+.tablesorter td {
+    padding: 1em;
+    border-bottom: solid 1px #eee
+}
+
+.tablesorter td a, .tablesorter td a:visited {
+    text-decoration: none;
+    color: #222
+}
+
+.tablesorter td a:hover {
+    color: #AA0505
+}
+
+.tablesorter td img {
+    max-width: 100px;
+    max-height: 100px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%
+}
+
+.tdAction {
+    text-align: center
+}
+
+#exit {
+    float: right
+}
+
+#exit a, #exit a:visited {
+    text-decoration: none;
+    color: #666
+}
+
+#exit a:hover {
+    color: #222
+}
+
+#list-add a, #list-add a:hover {
+    text-decoration: none
+}
+
+#list-add a:hover {
+    color: #222
+}
+
+.preview {
+    margin: 0.5em 0;
+    border: 1px solid #ccc
+}
+
+.preview, .preview img {
+    width: 100px;
+    height: 100px;
+    display: block
+}
+
+@media (max-width: 400px) {
+    .main {
+        grid-template-rows: minmax(10%, 80px) 1fr minmax(10%, 60px)
+    }
+
+    .inf {
+        padding: 0.5em 0
+    }
+
+    .gline {
+        grid-template-rows: repeat(2, minmax(1.5em, max-content));
+        grid-template-columns: 1fr
+    }
+
+    .gline.actions {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        align-items: center
+    }
+
+    .gline.actions div:first-child {
+        text-align: center
+    }
+
+    .preview {
+        margin: 0.5em auto
+    }
+
+    .office-form {
+        width: 100%
+    }
+
+    .tablesorter {
+        border: 0
+    }
+
+    .tablesorter th, .tablesorter td {
+        padding: 0.2em;
+        white-space: nowrap
+    }
+
+    .tablesorter td i {
+        display: none
+    }
+
+    .tablesorter td.tdAction i {
+        display: inline-block
+    }
+
+    .tablesorter td img {
+        max-width: 50px;
+        max-height: 50px
+    }
+
+    .tablesorter th, .tablesorter td, .tablesorter-header-inner {
+        font-size: 0.6em
+    }
+
+    .tablesorter td a, .tablesorter td a:visited {
+        font-size: 1em
+    }
+
+    .hideTxt {
+        text-indent: -9999px
+    }
+}
